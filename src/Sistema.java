@@ -273,7 +273,6 @@ public class Sistema {
 									ins.setAppello(appello_prenotato);
 									prenotazione.setInsegnamento(ins);
 									prenotazioni.add(prenotazione);								
-									s.setPrenotazione(prenotazioni);
 									carr_stud.get(indicecarriera).
 											getListaInsegnamento().remove(indice_esame);
 									return 0;
@@ -290,6 +289,8 @@ public class Sistema {
 							ArrayList<Prenotazione> prenot = new ArrayList<Prenotazione>();
 							prenot.add(prenotazione);
 							setPrenotazioni(prenot);	
+							carr_stud.get(indicecarriera).
+								getListaInsegnamento().remove(indice_esame);
 							return 0;
 						}
 					
@@ -307,7 +308,6 @@ public class Sistema {
 			return 1; // carriera vuota
 		}
 	}
-	
 }
 
 
