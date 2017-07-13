@@ -1,3 +1,4 @@
+import teststrutturale;
 import static org.junit.Assert.*;
 
 import java.io.BufferedReader;
@@ -44,7 +45,7 @@ public class AutenticazioneTest {
 			String line; 
 			line=bufferUtenti.readLine();
 		    
-		  /*Il file utentiRegistrati è così organizzato:
+		  /*Il file utentiRegistrati Ã¨ cosÃ¬ organizzato:
 		     * matricola studente/docente
 		     * nome
 		     * cognome
