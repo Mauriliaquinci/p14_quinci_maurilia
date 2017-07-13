@@ -1,4 +1,4 @@
-
+package teststrutturale;
 
 import static org.junit.Assert.*;
 
