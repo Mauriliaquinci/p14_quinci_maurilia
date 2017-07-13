@@ -1,3 +1,4 @@
+import testfunzionale;
 import static org.junit.Assert.*;
 
 import java.io.BufferedReader;
@@ -114,7 +115,7 @@ public class TestPrenotazioneEsame {
 	
 	/*Test dello scenario alternativo in cui uno studente non trova l'esame a cui prenotarsi
 	 * Nella descrizione dello scenario alternativo ho pensato che potrebbe esserci un
-	 * problema a livello di sistema, cioè, uno studente vuole prenotarsi ad un esame 
+	 * problema a livello di sistema, cioÃ¨, uno studente vuole prenotarsi ad un esame 
 	 * presente nella propria carriera ma non visibile nella sezione "prenotazione esame".
 	 * Per simulare questo scenario alternativo considero il caso in cui uno studente vuole prenotare un
 	 * insegnamento non presente nella propria carriera*/
