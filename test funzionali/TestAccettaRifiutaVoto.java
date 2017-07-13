@@ -1,4 +1,4 @@
-import testfunzionale;
+package testfunzionale;
 import static org.junit.Assert.*;
 
 import org.junit.After;
