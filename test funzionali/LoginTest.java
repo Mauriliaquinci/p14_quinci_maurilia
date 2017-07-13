@@ -1,4 +1,4 @@
-
+import testfunzionale;
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
@@ -54,21 +54,21 @@ public class LoginTest {
 		assertEquals(0, sistema.verificaPassword("s3503777", "3503", 0, true));	
 	}
 	
-	/*Test dello scenario  alternativo del caso d'uso Autenticazione in cui la matricola è errata*/
+	/*Test dello scenario  alternativo del caso d'uso Autenticazione in cui la matricola Ã¨ errata*/
 	@Test
 	public void testScenarioAlternativo3a() {
 		assertEquals(-3,sistema.verificaMatricola("3503777", true));
 		
 	}
 	
-	/*Test dello scenario  alternativo del caso d'uso Autenticazione in cui la password è errata*/
+	/*Test dello scenario  alternativo del caso d'uso Autenticazione in cui la password Ã¨ errata*/
 	@Test
 	public void testScenarioAlternativo5a() {
 		assertEquals(-1, sistema.verificaPassword("s3503777", "35", 0, true));	
 	}
 	
-	/*Test dello scenario  alternativo del caso d'uso Autenticazione in cui la password è errata
-	 * e il tentativo di immissione password è maggiore di tre*/
+	/*Test dello scenario  alternativo del caso d'uso Autenticazione in cui la password Ã¨ errata
+	 * e il tentativo di immissione password Ã¨ maggiore di tre*/
 	@Test
 	public void testScenarioAlternativo5b() {
 		assertEquals(-1, sistema.verificaPassword("s3503777", "35", 3, true));	
@@ -76,7 +76,7 @@ public class LoginTest {
 	}
 	
 	/*Test dello scenario  alternativo del caso d'uso Autenticazione in cui
-	 * l'email inserita dall'utente per inserire la nuova password è errata*/
+	 * l'email inserita dall'utente per inserire la nuova password Ã¨ errata*/
 	@Test
 	public void testScenarioAlternativoEmailNonCorretta() {
 		assertEquals(-1, sistema.verificaPassword("s3503777", "35", 3, true));	
